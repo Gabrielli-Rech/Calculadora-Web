@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  background: #121212;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo da calculadora */
+.calculator {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Campo de exibição */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #000;
+  color: #00ff88;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 5px #00ff88;
+}
+
+/* Grade dos botões */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Botões */
+button {
+  height: 55px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Hover e clique */
+button:hover {
+  background-color: #444;
+}
+
+button:active {
+  transform: scale(0.96);
+  background-color: #555;
+}
+
+/* Estilo para botões especiais */
+button.operator {
+  background-color: #6200ea;
+}
+
+button.operator:hover {
+  background-color: #7c23ff;
+}
+
+/* Responsividade (opcional) */
+@media (max-width: 400px) {
+  .calculator {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  #display {
+    font-size: 24px;
+  }
+
+  button {
+    height: 50px;
+    font-size: 16px;
+  }
+}
