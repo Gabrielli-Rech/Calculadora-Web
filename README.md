@@ -1,7 +1,7 @@
 # 🧮 Calculadora Web
 
 <p align="center">
-  <img src="App/View/Imagens/logo.png" alt="Logo Calculadora Web" width="200">
+  <img src="logo.png" alt="Logo Calculadora Web" width="200">
 </p>
 
 Bem-vindo ao **Calculadora Web**, uma aplicação simples e funcional desenvolvida com HTML, CSS e JavaScript. Este projeto tem como objetivo fornecer uma interface intuitiva para realizar operações matemáticas básicas diretamente no navegador.
